@@ -5,13 +5,9 @@ NAMESPACE := kube-system
 CHART_NAME := prometheus-community/kube-prometheus-stack
 CHART_VERSION ?= 10.3.2
 
-DEV_CLUSTER ?= p4-development
-DEV_PROJECT ?= planet-4-151612
-DEV_ZONE ?= us-central1-a
-
-PROD_CLUSTER ?= planet4-production
-PROD_PROJECT ?= planet4-production
-PROD_ZONE ?= us-central1-a
+DEV_CLUSTER ?= testrc
+DEV_PROJECT ?= jendevops1
+DEV_ZONE ?= australia-southeast1-c
 
 .DEFAULT_TARGET: status
 

@@ -5,7 +5,7 @@ docker_auth: &docker_auth
 
 defaults: &defaults
   docker:
-    - image: greenpeaceinternational/circleci-base:latest
+    - image: jencub2/circleci-base:latest
       auth:
         <<: *docker_auth
 
@@ -29,7 +29,7 @@ jobs:
   dev:
     <<: *defaults
     environment:
-      GOOGLE_PROJECT_ID: planet-4-151612
+      GOOGLE_PROJECT_ID: jendevops1
     steps:
       - checkout
       - run: activate-gcloud-account.sh
