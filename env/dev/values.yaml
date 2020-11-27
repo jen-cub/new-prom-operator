@@ -9,7 +9,7 @@ grafana:
       - hosts:
           - grafana.jencub.xyz
         secretName: grafana-jencub-xyz-tls
-  metadata:
-  annotations:
-    kubernetes.io/ingress.class: nginx
-    cert-manager.io/clusterissuer: letsencrypt-prod
+    metadata:
+    annotations:
+      kubernetes.io/ingress.class: nginx
+      cert-manager.io/clusterissuer: letsencrypt-prod
