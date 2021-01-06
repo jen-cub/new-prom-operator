@@ -11,5 +11,4 @@ grafana:
         secretName: grafana-jencub-xyz-tls
     metadata:
     annotations:
-      kubernetes.io/ingress.class: nginx
-      cert-manager.io/clusterissuer: letsencrypt-prod
+      kubernetes.io/ingress.class: traefik
