@@ -3,12 +3,7 @@ grafana:
   ingress:
     enabled: true
     hosts:
-      - grafana.jencub.xyz
+      - grafana.j4.jencub.xyz
     path: /
-    tls:
-      - hosts:
-          - grafana.jencub.xyz
-        secretName: grafana-jencub-xyz-tls
-    metadata:
     annotations:
       kubernetes.io/ingress.class: traefik
